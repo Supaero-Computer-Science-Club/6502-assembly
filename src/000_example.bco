@@ -1,0 +1,18 @@
+; the following code is only designed to work on early stages of the 
+; 65C02 computer project, or if wiring some LEDs at any point of the
+; project. LEDs should be connected to port B of the W65C22 versatile
+; interface adapter of the microprocessor.
+;
+; loads %01010101 into port B of the interface, then %10101010, then
+; back to %01010101, and so on, forever.
+
+0xa9, 0xff,         ; lda #$ff   ; sets port B as output.
+0x8d, 0x02, 0x60,   ; sta $6002
+
+0xa9, 0x55,         ; lda #$55   ; load %01010101 into port B.
+0x8d, 0x00, 0x60,   ; sta $6000
+
+0xa9, 0xaa,         ; lda #$aa   ; load %10101010 into port B.
+0x8d, 0x00, 0x60,   ; sta $6000
+
+0x4c, 0x05, 0x80,   ; jmp $8005
