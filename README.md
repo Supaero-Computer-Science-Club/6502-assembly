@@ -108,8 +108,6 @@ Some code are already available in this project:
 - `src/007_read-buttons.s`                  : a script that shows the buttons reads of the 5 buttons.                               ([here](src/007_read-buttons.s))
 - `src/008_pseudo-random-number-generator.s`: a script that shows a simple pseudo-random number generator using Linear Congruency.  ([here](src/008_pseudo-random-number-generator.s))
 - `src/009_lcd-cgram-write.s`               : a script that allows to write custom characters to the CGRAM of the LCD.              ([here](src/009_lcd-cgram-write.s))
-- `glider/`                                 : a game running on the LCD. ([here](glider/main.s)) + supplementary material           ([here](glider/)).
-- `keyboard-interface/`                     : some code to emulate a PS/2 keyboard using python and an Arduino board                ([here](keyboard-emulator/)).
 
 ## 7 Tips and tricks. [[toc](https://github.com/Supaero-Computer-Science-Club/6502-assembly/tree/main#table-of-content)]
 ### 7.1 Shortcuts. [[toc](https://github.com/Supaero-Computer-Science-Club/6502-assembly/tree/main#table-of-content)]
@@ -135,7 +133,3 @@ The general rule is `make <target> <PARAM1>=<value1> <PARAM2>=<value2>`.
 ### 7.2 On the 6502 oldstyle syntax. [[toc](https://github.com/Supaero-Computer-Science-Club/6502-assembly/tree/main#table-of-content)]
 - an introduction to the 65C02 features [here](http://www.obelisk.me.uk/65C02/): addressing modes explained [here](http://www.obelisk.me.uk/65C02/addressing.html) and instructions detailed [here](http://www.obelisk.me.uk/65C02/reference.html).
 - the documentation of the **vasm** assembler [here](http://sun.hasenbraten.de/vasm/release/vasm.html): with a special focus on the *Oldstyle Syntax Module* (**6**), *Simple binary output module* (**15**) and *6502 cpu module* (**22**) tabs.
-
-# TODO:  
- - links to Ben's channel and website.  
- - add assembly conventions, e.g. ;;; before the function definitions, etc...
